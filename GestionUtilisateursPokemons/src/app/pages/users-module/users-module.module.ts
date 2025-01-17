@@ -6,6 +6,7 @@ import { UserService } from '../../services/user.service';
 
 const routes: Routes = [
   { path: '', component: UserComponentComponent },
+  // {path:  'userDetails', component: UserDetailsComponent}
 ];
 
 @NgModule({
@@ -13,11 +14,12 @@ const routes: Routes = [
   imports: [
     RouterModule.forChild(routes),
     UserComponentComponent,
+    // UserDetailsComponent,
     CommonModule,
   ],
   providers: [
     UserService,
   ],
- 
+
 })
 export class UsersModuleModule {}

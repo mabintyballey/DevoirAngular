@@ -1,0 +1,11 @@
+<div class="card" *ngIf="user">
+  <div class="card-header">
+    <h3>Détails de l'utilisateur</h3>
+  </div>
+  <div class="card-body">
+    <p><strong>Nom :</strong> {{ user.name }}</p>
+    <p><strong>Email :</strong> {{ user.email }}</p>
+    <p><strong>Statut :</strong> {{ user.isAuthenticated ? 'Connecté' : 'Déconnecté' }}</p>
+    <p><strong>Mot de passe :</strong> {{ user.password }}</p>
+  </div>
+</div>

@@ -2,8 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { AuthService } from '../../../services/auth.service';
 import { PokemonService } from '../../../services/pokemon.service';
 import { Router, RouterModule } from '@angular/router';
-import { NavBarComponentComponent } from "../../../nav-bar-component/nav-bar-component.component";
 import { NgFor } from '@angular/common';
+import { NavBarComponentComponent } from '../../nav-bar-component/nav-bar-component.component';
 
 @Component({
   selector: 'app-dashboard-component',
